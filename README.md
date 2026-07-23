@@ -56,8 +56,9 @@ The Quantum Smart Timetable Optimizer solves all of these constraints automatica
 
 - **Node.js** >= 18.0.0
 - **npm** >= 9.0.0
+- **PowerShell (Windows users)**: Script execution permissions enabled (see Installation step 2)
 
-## Installation
+## Installation & Setup
 
 1. **Clone the repository**
 
@@ -66,19 +67,33 @@ The Quantum Smart Timetable Optimizer solves all of these constraints automatica
    cd Quantum-Smart-Timetable-Optimizer
    ```
 
-2. **Install dependencies**
+2. **Windows PowerShell Script Execution Policy (Important for Windows Users)**
+
+   If you are on Windows and using PowerShell, you might encounter an error like `File C:\path\to\npm\vite.ps1 cannot be loaded because running scripts is disabled on this system`. To resolve this, run PowerShell as Administrator and enable script execution:
+
+   ```powershell
+   # To allow scripts to run for the current user session only (Recommended & Safest):
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+   # OR to allow scripts permanently for local development:
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+   ```
+
+3. **Install Dependencies**
+
+   Install the project packages listed in `package.json` / `requirements.txt`:
 
    ```bash
    npm install
    ```
 
-3. **Start the development server**
+4. **Start the Development Server**
 
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**
+5. **Open in Browser**
 
    Visit `http://localhost:5173` (Vite's default port).
 
