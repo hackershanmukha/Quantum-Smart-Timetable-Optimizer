@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────────
+# Quantum Smart Timetable Optimizer - Requirements
+# ──────────────────────────────────────────────
+
+# Runtime Environment
+Node.js >= 18.0.0
+npm >= 9.0.0
+
+# ── Production Dependencies ──────────────────
+react@^19.2.7                   # UI library
+react-dom@^19.2.7               # React DOM renderer
+framer-motion@^12.42.2          # Animations & transitions
+lucide-react@^1.26.0            # Icon library
+recharts@^3.10.0                # Charting / data visualization
+
+# ── Development Dependencies ─────────────────
+vite@^8.1.1                     # Build tool & dev server
+@vitejs/plugin-react@^6.0.3    # React support for Vite
+tailwindcss@^4.3.3              # Utility-first CSS framework
+@tailwindcss/vite@^4.3.3       # Tailwind CSS Vite plugin
+oxlint@^1.71.0                  # Linter (Oxc-based)
+
+# ── Optional / Type Definitions ──────────────
+@types/react@^19.2.17           # TypeScript types for React
+@types/react-dom@^19.2.3        # TypeScript types for React DOM
+
+# ── Browser Requirements ─────────────────────
+# Any modern browser (Chrome 90+, Firefox 90+, Safari 15+, Edge 90+)
